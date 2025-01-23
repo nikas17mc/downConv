@@ -1,0 +1,9 @@
+h2 Show Files 
+
+if (!errorMessage)
+    code
+        each item in fileInfos
+            p= item.name
+            | - Size: #{item.byte} bytes
+else
+    p= errorMessage

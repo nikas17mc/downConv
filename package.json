@@ -1,0 +1,36 @@
+{
+  "name": "downconv",
+  "version": "0.0.1",
+  "description": "Download Picture from only one link and when required convert it in any format.",
+  "main": "./bin/www.js",
+  "scripts": {
+    "test": "nodemon ./bin/www.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikas17mc/downConv.git"
+  },
+  "keywords": [
+    "download",
+    "picture",
+    "link",
+    "converter",
+    "format"
+  ],
+  "author": "ニコライ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nikas17mc/downConv/issues"
+  },
+  "homepage": "https://github.com/nikas17mc/downConv#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "keygrip": "^1.1.0",
+    "multer": "^1.4.5-lts.1",
+    "path": "^0.12.7",
+    "pug": "^3.0.3"
+  }
+}

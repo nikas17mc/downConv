@@ -1,0 +1,19 @@
+
+block content
+    h2 File Upload
+
+    form(action='/upload', method='POST', enctype='multipart/form-data')
+        input(type='file', name='file')
+        button(type="submit") Upload File
+
+    hr
+
+    - var file = !file ? "" : file
+    if (!errorMessage)
+        h2= file.name 
+        p= file.size + ' bytes'
+        p= file.mimetype
+        p= file.md5
+        p= file.tempFilePath
+    else
+        p= errorMessage
